@@ -24,7 +24,6 @@ function parseMath(str) {
   AMnestingDepth = 0;
   frag = AMparseExpr(str.replace(/^\s+/g, ""), false)[0];
   node = createMmlNode("math", frag);
-  node.setAttribute("title", str.replace(/\s+/g, " "));
   return node;
 }
 
